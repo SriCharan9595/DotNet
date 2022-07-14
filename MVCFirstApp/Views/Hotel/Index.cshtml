@@ -1,0 +1,20 @@
+﻿@model HotelModel;
+
+<p>Welcome Professor Cheri</p><br />
+
+<p>ADD A HOTEL:</p>
+
+@using (Html.BeginForm("GetHotel", "Hotel"))
+{
+    @Html.Label("Hotel ID:")<br/>
+    @Html.TextBoxFor(addH=>addH.ID);<br />
+    @Html.Label("Hotel Name:")<br/>
+    @Html.TextBoxFor(addH=>addH.Name);<br />
+    @Html.Label("Hotel Category:")<br/>
+    @Html.TextBoxFor(addH=>addH.Category);<br />
+    @Html.Label("Hotel Branch:")<br/>
+    @Html.TextBoxFor(addH=>addH.Branch);<br />
+    <br />
+    <input type="submit" value="Save">
+}
+

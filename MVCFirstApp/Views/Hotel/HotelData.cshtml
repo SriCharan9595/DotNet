@@ -1,0 +1,11 @@
+﻿@model List<HotelModel>;
+
+<p>LIST OF HOTELS: </p>
+
+@foreach(var hotel in Model)
+{
+    <p>@hotel.Name  @hotel.Category  @hotel.Branch</p> 
+}
+
+@Html.ActionLink("Add a Hotel", "Index", "Hotel")
+
